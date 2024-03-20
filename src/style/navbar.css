@@ -86,8 +86,8 @@ header {
 
 @media (max-width: 480px) {
   .navbar {
-    width: 40%; /* Ocupa la mitad del ancho de la pantalla */
-    height: 100%; /* Ocupa toda la altura de la pantalla */
+    width: 30%; /* Ocupa la mitad del ancho de la pantalla */
+    height: 100%;
     background-color: var(--rosa); /* Cambia al color que desees */
     position: fixed;
     top: 0;
@@ -101,10 +101,10 @@ header {
   }
 
 
-
   .navbar.active {
     transform: translateX(0); /* Cuando el menú está activo, muéstralo completamente */
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
 
   .navbar.active .nav-list {
@@ -121,7 +121,7 @@ header {
   }
 
   .navbar.active .nav-list li {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 
   .navbar.active .nav-list li a {

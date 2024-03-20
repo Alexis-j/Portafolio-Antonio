@@ -7,6 +7,8 @@ function Navbar() {
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
+    // Aplica el overflow hidden al cuerpo cuando el menú se abre
+    document.body.style.overflow = menuVisible ? 'auto' : 'hidden';
   };
 
   return (
@@ -23,6 +25,7 @@ function Navbar() {
       </nav>
 
       <BurguerButton onClick={toggleMenu} isOpen={menuVisible} />
+      <div className={`overlay ${menuVisible ? 'active' : ''}`} onClick={toggleMenu}></div>
     </header>
   );
 }
