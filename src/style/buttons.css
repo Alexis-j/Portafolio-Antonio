@@ -1,0 +1,17 @@
+.contact-button {
+  background-color: var(--blanco);
+  font-family: var(--fuente_principal);
+  padding: 7px 15px;
+  border: 1px solid var(--negro);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+
+}
+
+.contact-button:hover {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
