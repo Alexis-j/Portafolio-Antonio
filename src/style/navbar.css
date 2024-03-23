@@ -130,3 +130,6 @@ header {
     font-size: 1.6rem; /* Cambia al tamaño de fuente que desees */
   }
 }
+.no-scroll {
+  overflow: hidden;
+}

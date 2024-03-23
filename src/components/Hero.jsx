@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePic from '../assets/antonio.png';
+import ProfilePic from '../assets/pngwing.com.png';
 import '../style/hero.css';
 import ContactBtn from './botones/contactButton';
 
@@ -12,7 +12,7 @@ function Hero() {
       <div className="saludo">
         <div className="name">
           <h1>Hi, I am <br/>
-          <strong>Antonio</strong></h1>
+          <strong>Tony Tony Chopper</strong></h1>
         </div>
         <h2 className="job-title">Frontend Developer</h2>
         < ContactBtn />

@@ -9,10 +9,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.6rem;
+  font-size: clamp(12px, 4vw, 18px);
 }
 p {
-  font-size: 2rem;
+  font-size: clamp(16px, 4vw, 20px);
 }
 
 .container {
@@ -42,15 +42,13 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: clamp(16px, 4vw, 38px);
+  margin: 0;
 }
 h2 {
-  font-size: 3.4rem;
+  font-size: clamp(16px, 4vw, 34px);
 }
 h3 {
-  font-size: 3rem;
-}
+  font-size: clamp(12px, 4vw, 30px);}
 h4 {
-  font-size: 2.6rem;
-}
-
+  font-size: clamp(12px, 4vw, 26px);}

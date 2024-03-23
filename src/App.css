@@ -28,4 +28,9 @@
 --regular : 400;
 --bold: 700;
 --black: 900
+
+
+--buttons: font-size: clamp(12px, 4vw, 18px);
+--titulos: font-size: clamp(16px, 4vw, 20px);
+--subtitulos: font-size: clamp(24px, 4vw, 32px);
 }

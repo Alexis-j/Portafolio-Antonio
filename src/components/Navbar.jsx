@@ -7,13 +7,17 @@ function Navbar() {
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
-    // Aplica el overflow hidden al cuerpo cuando el menú se abre
-    document.body.style.overflow = menuVisible ? 'auto' : 'hidden';
+
+    if (!menuVisible) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
   };
 
   return (
     <header>
-      <h2 className='logo'>KAS</h2>
+      <h2 className='logo'>&lt;Chopper-T /&gt;</h2>
 
       <nav className={`navbar ${menuVisible ? 'active' : ''}`}>
         <ul className='nav-list'>
@@ -25,7 +29,6 @@ function Navbar() {
       </nav>
 
       <BurguerButton onClick={toggleMenu} isOpen={menuVisible} />
-      <div className={`overlay ${menuVisible ? 'active' : ''}`} onClick={toggleMenu}></div>
     </header>
   );
 }
