@@ -1,5 +1,68 @@
 .title{
-    font-size: var(--subtitulos);
+    font-size: var(--skilltitulo);
+    font-family: var(--fuente_secundaria);
     margin-bottom: 1rem;
-    color: red;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skills-titulo{
+  color: var(--negro);
+  font-size: var(--skilltitulo);
+  font-family: var(--fuente_principal);
+  font-weight: var(--delgada);
+  margin: 1rem;
+}
+
+.skills-item{
+  columns: 300px;
+  padding: 5px;
+  border: 1px solid var(--negro);
+  border-radius: 10px;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.devicon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.devicon i {
+  font-size: clamp(50px, 4vw, 75px);
+  margin: auto;
+}
+
+.devicon i:hover {
+  animation: shake 0.40s;
+}
+@keyframes shake {
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
 }

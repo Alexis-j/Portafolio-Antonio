@@ -11,6 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-list {
   list-style-type: none;
   display: flex;
@@ -56,6 +57,7 @@ header {
 .nav-list li a {
   text-decoration: none;
   color: var(--negro);
+  font-size: var(--titulo);
   cursor: pointer;
   position: relative;
   display: block;
@@ -86,7 +88,7 @@ header {
 
 @media (max-width: 480px) {
   .navbar {
-    width: 30%; /* Ocupa la mitad del ancho de la pantalla */
+    width: 30%; /* Ocupa la 30% del ancho de la pantalla */
     height: 100%;
     background-color: var(--rosa); /* Cambia al color que desees */
     position: fixed;
@@ -118,6 +120,10 @@ header {
     align-items: flex-end;
     padding-top: 50%;
 
+  }
+
+  .nav-list li:first-child {
+    margin-top: 20px; /* Cambia el valor según la cantidad de espacio que desees */
   }
 
   .navbar.active .nav-list li {

@@ -30,7 +30,9 @@
 --black: 900
 
 
---buttons: font-size: clamp(12px, 4vw, 18px);
---titulos: font-size: clamp(16px, 4vw, 20px);
---subtitulos: font-size: clamp(24px, 4vw, 32px);
+--button: clamp(12px, 4vw, 18px);
+--titulo: clamp(16px, 4vw, 20px);
+--skilltitulo: clamp(28px, 4vw, 34px);
+--skillsubtituls: clamp(24px, 4vw, 34px);
+
 }

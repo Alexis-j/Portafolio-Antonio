@@ -32,7 +32,7 @@
 
 @media (max-width: 480px) {
   .hero-photo {
-    width: clamp(100px, 50vw, 275px);
+    width: clamp(100px, 38vw, 275px);
     height: auto;
   }
   .saludo {
