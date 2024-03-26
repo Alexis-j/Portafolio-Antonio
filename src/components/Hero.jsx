@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfilePic from '../assets/pngwing.com.png';
 import '../style/hero.css';
-import ContactBtn from './botones/contactButton';
+import ContactBtn from './botones/ContactBtn';
 
 function Hero() {
   return (

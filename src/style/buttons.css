@@ -1,3 +1,10 @@
+.projects {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background-color: var(--blanco);
+}
+
 .contact-button {
   position: relative;
   background-color: var(--blanco);
@@ -28,3 +35,4 @@
 .contact-button:hover::before {
   opacity: 1;
 }
+
