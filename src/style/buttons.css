@@ -36,3 +36,20 @@
   opacity: 1;
 }
 
+.link-button {
+  position: relative;
+  background-color: var(--blanco);
+  font-family: var(--fuente_secundaria);
+  font-weight: var(--black);
+  padding: 7px 15px;
+  border: 1px solid var(--negro);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Agrega transform a la transición */
+  width: clamp(75px, 4vw, 90px);
+}
+
+.link-button:hover {
+  background-color: var(--negro);
+  color: var(--blanco);
+}

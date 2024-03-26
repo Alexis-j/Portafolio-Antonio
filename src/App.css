@@ -34,5 +34,6 @@
 --titulo: clamp(16px, 4vw, 20px);
 --skilltitulo: clamp(28px, 4vw, 34px);
 --skillsubtituls: clamp(24px, 4vw, 34px);
-
+--titulo_projectos: clamp(24px, 4vw, 34px);
+--texto_projectos: clamp(16px, 4vw, 20px);
 }
