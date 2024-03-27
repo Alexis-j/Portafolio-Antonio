@@ -1,10 +1,16 @@
 import React from 'react';
 import '../../style/buttons.css';
-import '../../style/animations.css'
 
+const DemoBtn = ({ link }) => {
+  const handleClick = () => {
+    window.open(link, '_blank');
+  };
 
-export default function DemoBtn( {href} ) {
   return (
-    <button className="link-button mve-left"  href={href} target="_blank">Demo</button>
+    <button className="link-button" onClick={handleClick}>
+      Demo
+    </button>
   );
-}
+};
+
+export default DemoBtn;

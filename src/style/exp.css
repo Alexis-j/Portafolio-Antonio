@@ -1,6 +1,7 @@
 .projects {
   margin: 0 auto;
   animation: fadeIn 2s forwards;
+  margin-top: 7rem;
 }
 
 .projects-container {
@@ -11,6 +12,12 @@
   margin-top: 2rem;
   }
   @media (max-width: 480px){
+    .projects-container {
+      gap:5rem;
+    }
+  }
+
+  @media (max-width: 768px){
     .projects-container {
       gap:5rem;
     }

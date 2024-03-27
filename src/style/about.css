@@ -1,0 +1,62 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr 2fr));
+  margin: 7rem auto;
+  max-width: 1100px;
+  width: clamp(250px, 100%, 1000px);
+}
+
+.about-photo-container {
+  grid-column: 2 / span 1; /* Ocupar la segunda columna */
+  grid-row: 1 / span 1; /* Ocupar 4 filas */
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
+  }
+
+  .about-container {
+    grid-column: 1 / span 1; /* Ocupar toda la columna */
+    grid-row: 1 / span 1; /* Ocupar 1 fila */
+  }
+
+  .about-description {
+    align-self: center;
+  }
+
+  .about-photo-container {
+    grid-column: 1 / span 1; /* Ocupar toda la columna */
+    grid-row: 2 / span 1; /* Ocupar 1 fila */
+    margin: 0 auto; /* Centrar horizontalmente la imagen */
+    object-fit: cover;
+    width: 90%;
+  }
+}
+
+.about-subtitle {
+  font-size: var(--skilltitulo);
+  font-family: var(--fuente_secundaria);
+  text-align: left;
+  background-color: var(--negro);
+  color: var(--blanco);
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+  
+}
+
+.about-text {
+  font-size: var(--texto_projectos);
+  font-family: var(--fuente_secundaria);
+}
+
+.about-photo-container img {
+  max-height: 400px;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  object-fit: cover;
+}

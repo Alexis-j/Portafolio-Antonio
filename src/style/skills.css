@@ -1,3 +1,7 @@
+.skills{
+  margin: 7rem auto;
+}
+
 .title{
     font-size: var(--skilltitulo);
     font-family: var(--fuente_secundaria);

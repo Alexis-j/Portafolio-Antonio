@@ -15,24 +15,24 @@ const projectsList = [
     name: "Sunshine Sage",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat officiis pariatur fugit praesentium",
     imageUrl: ProjectPic1,
-    githubLink: "https://example.com/github1",
-    demoLink: "https://example.com/demo1"
+    githubLink: "https://github.com/Alexis-j/SunshineSage",
+    demoLink: "https://sunshine-sage-web-pronostico-tiempo.netlify.app/"
   },
   {
     id: 2,
-    name: "Soozie App",
+    name: "Bienes & Raices",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat officiis pariatur fugit praesentium",
     imageUrl: ProjectPic2,
-    githubLink: "https://example.com/github1",
-    demoLink: "https://example.com/demo1"
+    githubLink: "https://github.com/Alexis-j/Bienes-Raices",
+    demoLink: "https://www.youtube.com/"
   },
   {
     id: 3,
     name: "Festival",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat officiis pariatur fugit praesentium",
     imageUrl: ProjectPic3,
-    githubLink: "https://example.com/github1",
-    demoLink: "https://example.com/demo1"
+    githubLink: "https://github.com/Alexis-j/FestivalMusica",
+    demoLink: "https://clinquant-heliotrope-dcddf9.netlify.app/"
   }
 ];
 

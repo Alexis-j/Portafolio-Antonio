@@ -1,9 +1,16 @@
 import React from 'react';
 import '../../style/buttons.css';
 
+const GithubBtn = ({ link }) => {
+  const handleClick = () => {
+    window.open(link, '_blank'); // Abre el enlace en una nueva pestaña
+  };
 
-export default function GithubBtn( {href} ) {
   return (
-    <button className="link-button mve-right"  href={href} target="_blank">Github</button>
+    <button className="github-btn" onClick={handleClick}>
+      Github
+    </button>
   );
-}
+};
+
+export default GithubBtn;
