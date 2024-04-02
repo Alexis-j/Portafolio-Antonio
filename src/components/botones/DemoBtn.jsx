@@ -7,7 +7,7 @@ const DemoBtn = ({ link }) => {
   };
 
   return (
-    <button className="link-button" onClick={handleClick}>
+    <button className="link-button mve-left" onClick={handleClick}>
       Demo
     </button>
   );

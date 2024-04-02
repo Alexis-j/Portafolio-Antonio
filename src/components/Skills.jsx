@@ -5,7 +5,7 @@ import '../style/skills.css'; // Asegúrate de que esta ruta sea correcta y apun
 export default function Skills() {
   return (
     <section id="skills" className='skills'>
-      <h2 className="title">Skills</h2>
+      <h2 className="title fadeIn">Skills</h2>
       <div className="skills-container container">
         <div className="skills-item">
           <h3 className='skills-titulo'>Frontend</h3>

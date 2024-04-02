@@ -1,0 +1,26 @@
+.separador {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 7rem auto;
+}
+
+.separador  img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  margin: 0 auto;
+  background-color: var(--blanco);
+}
+.divider-stripe {
+  content: '';
+  position: relative;
+  display: block;
+  width: 45%;
+  height: 1px;
+  background-color: #E4E4E4;
+  margin: 0 auto;
+  z-index: 1;
+}

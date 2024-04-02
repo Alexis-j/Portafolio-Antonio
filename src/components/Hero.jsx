@@ -14,7 +14,7 @@ function Hero() {
           <h1>Hi, I am <br/>
           <strong>Tony Tony Chopper</strong></h1>
         </div>
-        <h2 className="job-title">Frontend Developer</h2>
+        <h2 className="job-title">Miembro de los piratas <br /> Sombrero de Paja</h2>
         < ContactBtn />
       </div>
     </section>

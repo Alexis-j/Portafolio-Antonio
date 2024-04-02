@@ -1,7 +1,7 @@
 .projects {
   margin: 0 auto;
   animation: fadeIn 2s forwards;
-  margin-top: 7rem;
+  max-width: 1100px;
 }
 
 .projects-container {
@@ -21,8 +21,20 @@
     .projects-container {
       gap:5rem;
     }
+}
+
+  @media (max-width: 1084px){
+    .projects-container {
+      gap:5rem;
+    }
   }
 
+  @media (max-width: 1124px){
+    .projects-container {
+      gap:5rem;
+      max-width: 95%;
+    }
+  }
 
 .project-content {
   border: 1px solid var(--negro);
@@ -31,7 +43,6 @@
 
 .project-content img {
   max-width: 95%; /* Establece el ancho máximo al 95% del contenedor */
-  display: block;
   margin: -20px auto;
   border-radius: 5px;
   transition: transform ease 0.5s;

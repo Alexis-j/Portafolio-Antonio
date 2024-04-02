@@ -38,8 +38,8 @@ const projectsList = [
 
 function Projects() {
   return (
-    <section id="projects" className='projects container'>
-      <h2>Projects</h2>
+    <section id="projects" className='projects'>
+      <h2 className='fadeIn'>Projects</h2>
       <div className="projects-container">
         {projectsList.map(project => (
           <div className="project-content" key={project.id}>

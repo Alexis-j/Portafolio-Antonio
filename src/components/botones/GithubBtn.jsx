@@ -7,7 +7,7 @@ const GithubBtn = ({ link }) => {
   };
 
   return (
-    <button className="github-btn" onClick={handleClick}>
+    <button className="link-button mve-right" onClick={handleClick}>
       Github
     </button>
   );
