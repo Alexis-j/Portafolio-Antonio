@@ -1,0 +1,14 @@
+.footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  padding-top:1rem;
+}
+
+.footer p {
+  color: var(--negro);
+  font-size: var(--texto_projectos);
+  font-family: var(--fuente_principal);
+}

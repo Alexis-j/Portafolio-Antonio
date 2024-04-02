@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { checkVisibility } from '../components/ScrollUtils';
+
 import ProjectPic1 from '../assets/projects/Projecto Wheater.png';
 import ProjectPic2 from '../assets/projects/Projecto Soozie.png';
 import ProjectPic3 from '../assets/projects/Rock&EDM.png';
 
-
 import GithubBtn from './botones/GithubBtn';
 import DemoBtn from './botones/DemoBtn';
-import '../style/exp.css';
-import '../style/animations.css';
+import '../style/projects.css';
+import '../style/btns/animations.css';
 
 const projectsList = [
   {
@@ -37,21 +38,34 @@ const projectsList = [
 ];
 
 function Projects() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      checkVisibility("projects", setIsVisible);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section id="projects" className='projects'>
-      <h2 className='fadeIn'>Projects</h2>
+      <h2 className={`fadeIn ${isVisible ? "mve-arriba" : ""}`}>Projects</h2>
       <div className="projects-container">
         {projectsList.map(project => (
           <div className="project-content" key={project.id}>
-            <div className="mve-arriba">
-            <img src={project.imageUrl} alt={project.name} loading='lazy' />
+            <div className={`mve ${isVisible ? "mve-arriba" : ""}`}>
+              <img src={project.imageUrl} alt={project.name} loading='lazy' />
             </div>
             <div className="project-text">
               <h3>{project.name}</h3>
               <p>{project.description}</p>
               <nav className='nav-btns'>
-              <GithubBtn link={project.githubLink} />
-              <DemoBtn link={project.demoLink} />
+                <GithubBtn link={project.githubLink} />
+                <DemoBtn className={`mve ${isVisible ? "mve-left" : ""}`} link={project.demoLink} />
               </nav>
             </div>
           </div>

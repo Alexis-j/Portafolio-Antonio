@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/buttons.css';
+import '../../style/btns/buttons.css';
 
 export default function ContactBtn() {
   return (

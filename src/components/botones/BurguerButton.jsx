@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/BurguerButton.css';
+import '../../style/btns/BurguerButton.css';
 
 function BurguerButton({ onClick, isOpen }) {
   const handleClick = () => {

@@ -1,0 +1,20 @@
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas, una para los campos izquierdos y otra para el mensaje */
+  grid-column-gap: 20px; /* Espacio entre las columnas */
+}
+
+.left-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-fields input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  grid-column: span 2; /* Hacer que el botón ocupe el ancho completo de ambas columnas */
+}
