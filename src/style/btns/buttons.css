@@ -53,3 +53,19 @@
   background-color: var(--negro);
   color: var(--blanco);
 }
+
+.btn-send {
+  background-color: var(--blanco);
+  font-family: var(--fuente_principal);
+  padding: 7px 15px;
+  border: 1px solid var(--negro);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 8rem;
+}
+
+.btn-send:hover {
+  background-color: var(--negro);
+  color: var(--blanco);
+}

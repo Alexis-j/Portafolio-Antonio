@@ -30,9 +30,9 @@ function Contact() {
     <section id="contact" className="contact">
       <div>
         <h2 className="saludo">Hi, there</h2>
-      <div className="divider-stripe-small"></div>
+      {/* <div className="divider-stripe-small"></div> */}
       </div>
-      <p className="saludos">Interest aroused? I look forward to hearing from you!</p>
+      <h2 className="saludos">Interest aroused? I'm look forward to hearing from you!</h2>
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="left-fields">
           <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Nombre" />
@@ -40,7 +40,7 @@ function Contact() {
           <input type="text" name="subject" value={formData.subject} onChange={handleChange} placeholder="Asunto" />
         </div>
         <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Mensaje"></textarea>
-        <input type="submit" value="Enviar" />
+        <input className="btn-send" type="submit" value="Enviar" />
       </form>
     </section>
   );

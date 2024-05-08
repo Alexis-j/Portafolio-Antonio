@@ -25,17 +25,12 @@
   z-index: 1;
 }
 
-
 .separador {
   display: flex;
   justify-content: space-between;
   align-items: left;
   max-width: 300px;
 
-}
-
-.saludo {
-  display: inline-block; /* Para que el div ocupe solo el ancho del contenido */
 }
 
 .divider-stripe-small {

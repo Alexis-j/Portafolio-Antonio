@@ -1,7 +1,16 @@
+.contact {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
 .contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Dos columnas, una para los campos izquierdos y otra para el mensaje */
   grid-column-gap: 20px; /* Espacio entre las columnas */
+}
+.btn-send {
+  margin: 0 auto;
 }
 
 .left-fields {
@@ -13,8 +22,27 @@
 textarea {
   width: 100%;
   margin-bottom: 10px;
+  background-color: var(--blanco);
+  font-family: var(--fuente_principal);
+  padding: 7px 15px;
+  border: 1px solid var(--negro);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 input[type="submit"] {
   grid-column: span 2; /* Hacer que el botón ocupe el ancho completo de ambas columnas */
+}
+
+.saludos {
+  color: var(--negro);
+  animation: moveInLeft 2s forwards;
+  font-family: var(--fuente_principal);
+}
+
+@media (max-width: 480px){
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
 }
