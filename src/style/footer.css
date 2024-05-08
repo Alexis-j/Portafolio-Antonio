@@ -2,8 +2,9 @@
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin:0;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
   padding-top:1rem;
 }
 
@@ -11,4 +12,11 @@
   color: var(--negro);
   font-size: var(--texto_projectos);
   font-family: var(--fuente_principal);
+}
+
+@media (max-width: 480px){
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
 }

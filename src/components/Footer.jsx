@@ -12,8 +12,18 @@ export default function Footer() {
   return (
     <section id="footer" >
       <div className="footer">
-        <p>&copy; {currentYear} Alexis Jiménez C.
-        </p>
+        <div>
+          <nav className="navbar">
+            <ul className='nav-list'>
+              <li><a href='/'>About</a></li>
+              <li><a href='/'>Projects</a></li>
+              <li><a href='/'>Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <p>&copy; {currentYear} Alexis Jiménez C.</p>
+        </div>
       </div>
     </section>
   );
