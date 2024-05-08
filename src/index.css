@@ -36,7 +36,6 @@ picture {
 h1, h2, h3 {
   font-weight: 300;
   text-align: center;
-
 }
 
 h1 {
@@ -47,8 +46,6 @@ h2 {
   font-size: clamp(16px, 4vw, 34px);
 }
 h3 {
-  font-size: clamp(12px, 4vw, 30px);}
+  font-size: clamp(14px, 4vw, 32px);}
 h4 {
   font-size: clamp(12px, 4vw, 26px);}
-
-

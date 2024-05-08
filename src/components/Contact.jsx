@@ -29,10 +29,8 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div>
-        <h2 className="saludo">Hi, there</h2>
-      {/* <div className="divider-stripe-small"></div> */}
+      <h2 className="saludo"> I'm look forward to hearing from you!</h2>
       </div>
-      <h2 className="saludos">Interest aroused? I'm look forward to hearing from you!</h2>
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="left-fields">
           <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Nombre" />
